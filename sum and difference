@@ -1,0 +1,47 @@
+/*
+The fundamental data types in c are int, float and char. Today, we're discussing int and float data types.
+
+The printf() function prints the given statement to the console. The syntax is printf("format string",argument_list);. In the function, if we are using an integer, character, string or float as argument, then in the format string we have to write %d (integer), %c (character), %s (string), %f (float) respectively.
+
+The scanf() function reads the input data from the console. The syntax is scanf("format string",argument_list);. For ex: The scanf("%d",&number) statement reads integer number from the console and stores the given value in variable
+*/
+
+/*
+Sample Input
+
+10 4
+4.0 2.0
+Sample Output
+
+14 6
+6.0 2.0
+*/
+
+code:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num1,num2;
+    float n1,n2;
+    
+    scanf("%d%d",&num1,&num2);
+    scanf("%f%f",&n1,&n2);
+    int add,diff;
+    add=num1+num2;
+    diff=num1-num2;
+    printf("%d ",add);
+    printf("%d\n",diff);
+	
+float fadd,fdiff;
+    
+    fadd=n1+n2;
+    fdiff=n1-n2;
+    printf("%0.1f ",fadd);
+    printf("%0.1f",fdiff);
+    return 0;
+}
